@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>App</title>
+        <style>
+            * {
+                font-size: 1.1em;
+            }
+        </style>
+    </head>
+    <body>
+        <form>
+            <input type="text" name="text" placeholder="Text" />
+            <input type="submit" />
+        </form>
+        <pre id="result"></pre>
+        <script>
+            document
+                .querySelector("form")
+                .addEventListener("submit", async function onsubmit(event) {
+                    event.preventDefault();
+                    const form = event.target;
+                    const formData = new FormData(form);
+                    const formObject = {};
+                    formData.forEach((value, key) => {
+                        formObject[key] = value;
+                    });
+                    let response = await fetch("/api/hasher", {
+                        method: "POST",
+                        body: JSON.stringify(formObject),
+                        headers: {
+                            "Content-Type": "application/json;charset=UTF-8",
+                        },
+                    });
+                    const response_data = await response.text();
+                    document.getElementById("result").innerHTML = response_data;
+                });
+        </script>
+    </body>
+</html>

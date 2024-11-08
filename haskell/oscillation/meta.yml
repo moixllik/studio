@@ -1,0 +1,8 @@
+title: Y si lo normal es que oscile
+author: Irving Montalvo
+date: Ago. 30, 2024
+papersize: a4
+fontsize: 12pt
+geometry: margin=2.5cm
+header-includes: |
+  \renewcommand{\figurename}{Figura}

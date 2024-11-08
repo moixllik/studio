@@ -1,0 +1,10 @@
+mongo-c-driver*
+/*.dll
+/*.so
+*.exe
+*.ilk
+*.pdb
+/build
+src/src
+.env
+__*

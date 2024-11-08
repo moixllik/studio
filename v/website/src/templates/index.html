@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moix</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <main class="container">
+        <header>
+            <h1>Moix</h1>
+            <nav>
+                <menu>
+                    <a href="/">Home</a>
+                    <a href="/about-us">About Us</a>
+                    <a href="/services">Services</a>
+                    <a href="/contact-us">Contact Us</a>
+                </menu>
+            </nav>
+        </header>
+        <section class="flex">
+            <aside>
+                <details open>
+                    <summary>Updates</summary>
+                    <ul>
+                        @for update in updates
+                        <li><a href="@update.href">@update.title</a></li>
+                        @end
+                    </ul>
+                </details>
+            </aside>
+            <article>
+                <h2>Title of article</h2>
+                <img class="right" src="https://picsum.photos/200/200?grayscale" alt="image">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi obcaecati hic veritatis pariatur
+                    voluptatem ipsam distinctio iste itaque aut quo non ducimus consequuntur, ipsa culpa eos. Quasi nisi
+                    laborum numquam?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi obcaecati hic veritatis pariatur
+                    voluptatem ipsam distinctio iste itaque aut quo non ducimus consequuntur, ipsa culpa eos. Quasi nisi
+                    laborum numquam?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi obcaecati hic veritatis pariatur
+                    voluptatem ipsam distinctio iste itaque aut quo non ducimus consequuntur, ipsa culpa eos. Quasi nisi
+                    laborum numquam?</p>
+            </article>
+        </section>
+        <footer>
+            &copy; 2024
+        </footer>
+    </main>
+</body>
+
+</html>

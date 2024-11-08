@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>{{ doc.title }} - Moixllik</title>
+        <meta name="description" content="{{ doc.desc }}" />
+
+        <link rel="stylesheet" href="/css/index.css" />
+        <link rel="stylesheet" href="/css/reader.css" />
+        <link rel="stylesheet" href="/css/my/code.css" />
+
+        <script async defer src="/js/my/markdown.js"></script>
+        <script async defer src="/js/my/code.js"></script>
+
+        <!-- COVER -->
+        <meta
+            property="og:image"
+            content="https://blog.moix.cc/file/{{ doc.cover }}"
+        />
+        <meta
+            name="twitter:image"
+            content="https://blog.moix.cc/file/{{ doc.cover }}"
+        />
+    </head>
+
+    <body>
+        {% include "index/aside.html" %}
+        <main>
+            <header class="p1">
+                {% include "docs/search.html" %}
+                <h1>
+                    <a href="/d/{{ doc.uri }}">{{ doc.title }}</a>
+                </h1>
+                <div class="fss tar">
+                    <div class="dib tal">
+                        <b>Autores</b>:<br />
+                        {% for author in doc.authors %} ≫
+                        <a href="/d/?q=%40{{ author }}">{{ author }}</a><br />
+                        {% endfor %}
+                        <br />
+                        <b>Fecha</b>: {{ modified }}<br />
+                        <b>Etiquetas</b>: {% for tag in doc.tags %}
+                        <a href="/d/?q=%23{{ tag }}">#{{ tag }}</a>
+                        {% endfor %}
+                    </div>
+                </div>
+            </header>
+            <section class="p1 content">
+                <my-markdown>{{ doc.content }}</my-markdown>
+            </section>
+            <section class="p1 extra">
+                <my-markdown>{{ doc.extra }}</my-markdown>
+            </section>
+        </main>
+        {% include "index/footer.html" %}
+    </body>
+</html>

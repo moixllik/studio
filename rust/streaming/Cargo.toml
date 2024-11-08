@@ -1,0 +1,12 @@
+[package]
+name = "app"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+cpal = "*"
+dotenv = "*"
+futures = "*"
+ratatui = { version = "*", features = ["crossterm"] }
+tokio = { version = "*", features = ["full"] }
+tokio-tungstenite = { version = "*", features = ["native-tls"] }

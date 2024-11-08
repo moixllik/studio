@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>Publicaciones - Moixllik</title>
+        <meta name="description" content="Lista de publicaciones" />
+
+        <link rel="stylesheet" href="/css/index.css" />
+    </head>
+
+    <body>
+        {% include "index/aside.html" %}
+        <main>
+            <header class="p1">
+                <h1>
+                    <a href="/d/">Publicaciones</a>
+                </h1>
+                {% include "docs/search.html" %}
+            </header>
+
+            <section class="p1">
+                {% for doc in result %}
+                <div class="p1">
+                    <p class="c3 fvsc">
+                        <a href="/d/{{ doc.uri }}">{{ doc.title }}</a>
+                    </p>
+                    <p class="fss">{{ doc.desc }}</p>
+                </div>
+                {% endfor %}
+            </section>
+        </main>
+        {% include "index/footer.html" %}
+    </body>
+</html>

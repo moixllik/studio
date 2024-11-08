@@ -1,0 +1,12 @@
+name = "app"
+main = "build/worker/shim.mjs"
+compatibility_date = "2024-08-21"
+
+[build]
+command = "cargo install -q worker-build && worker-build --release"
+
+[placement]
+mode = "smart"
+
+[vars]
+HOST = "https://example.com"

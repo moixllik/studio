@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>Moixllik</title>
+        <meta name="description" content="Computación, Contabilidad y Juegos" />
+
+        <link rel="stylesheet" href="/css/index.css" />
+
+        <!-- COVER -->
+        <meta
+            property="og:image"
+            content="https://blog.moix.cc/file/moixllik"
+        />
+        <meta
+            name="twitter:image"
+            content="https://blog.moix.cc/file/moixllik"
+        />
+    </head>
+
+    <body>
+        {% include "index/aside.html" %}
+        <main>
+            <header class="p1">
+                <h1>
+                    <a href="/">Moixllik</a>
+                </h1>
+                <h2 class="fsi">Computación, Contabilidad y Juegos</h2>
+                {% include "index/search.html" %}
+            </header>
+
+            <article class="p1">
+                <h3>Publicaciones</h3>
+                {% for doc in docs %}
+                <div class="p1">
+                    <p>
+                        <a class="c3 fvsc" href="/d/{{ doc.uri }}"
+                            >{{ doc.title }}</a
+                        >
+                    </p>
+                    <p>{{ doc.desc }}</p>
+                </div>
+                {% endfor %}
+            </article>
+
+            <article class="p1">
+                <h3>Proyectos</h3>
+                <div class="df fww">
+                    {% for repo in repos %}
+                    <div class="p1">
+                        <p class="bc4 c3 fvsc tac p1 br3">
+                            <a href="{{ repo.html_url }}">{{ repo.name }}</a>
+                        </p>
+                        <p class="p1">{{ repo.description }}</p>
+                    </div>
+                    {% endfor %}
+                </div>
+            </article>
+        </main>
+        {% include "index/footer.html" %}
+    </body>
+</html>

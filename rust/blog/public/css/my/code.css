@@ -1,0 +1,39 @@
+my-code {
+    display: block;
+    overflow: auto;
+    & i {
+        color: var(--c8);
+    }
+
+    & b {
+        color: var(--c9);
+    }
+
+    & span {
+        color: var(--c10);
+    }
+
+    & em {
+        font-style: normal;
+        color: var(--c11);
+    }
+}
+
+pre {
+    position: relative;
+
+    & .copy::before {
+        content: "Copy";
+        font-variant: small-caps;
+    }
+
+    & .copy {
+        position: absolute;
+        top: 1px;
+        right: 1px;
+        padding: .5em;
+        border-radius: 3px;
+        background-color: var(--c1);
+        cursor: pointer;
+    }
+}

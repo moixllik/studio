@@ -1,0 +1,59 @@
+.container {
+    margin-inline: auto;
+    max-width: min(100vh, 100vw);
+}
+
+.flex {
+    display: flex;
+    gap: 1em;
+    flex-direction: row-reverse;
+}
+
+.right {
+    float: right;
+}
+
+h1 {
+    font-family: monospace;
+}
+
+a {
+    text-decoration: none;
+}
+
+menu a {
+    display: inline-block;
+    color: inherit;
+    margin-inline: 0.5em;
+}
+
+details {
+    min-width: 180px;
+}
+
+p {
+    text-wrap: balance;
+}
+
+summary {
+    background-color: black;
+    color: white;
+    padding: 0.5em;
+    border-radius: 5px;
+}
+
+h1,
+summary {
+    font-variant: small-caps;
+}
+
+aside a {
+    display: block;
+    padding-bottom: 0.5em;
+}
+
+footer {
+    font-size: smaller;
+    text-align: center;
+    margin-block: 2em;
+}

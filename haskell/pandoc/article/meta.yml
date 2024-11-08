@@ -1,0 +1,14 @@
+title: Uso de Pandoc para la creación de documentación
+author: Irving Montalvo
+date: Ago 14, 2024
+papersize: a4
+fontsize: 12pt
+geometry: margin=2.5cm
+keywords: pandoc markdown documentación
+subject: Creación de documentación con markdown, fórmulas y gráficos matemáticos
+toc: true
+toc-title: "Índice"
+bibliography: ./article/references.bib
+csl: ./apa7.csl
+header-includes: |
+  \renewcommand{\figurename}{Figura}

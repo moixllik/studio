@@ -1,0 +1,15 @@
+[package]
+name = "app"
+version = "0.1.0"
+edition = "2021"
+
+[profile.release]
+opt-level = "z" # Optimizaciones de tamaño
+lto = true      # Link Time Optimization
+panic = 'abort'
+
+[dependencies]
+askama = "0.12.1"
+blake3 = "1.5.4"
+ntex = { version = "2.3.0", features = ["tokio"] }
+serde = "1.0.209"

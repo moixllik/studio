@@ -1,0 +1,9 @@
+[package]
+name = "speecher"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+eframe = "0.28.1"
+msedge-tts = "0.2.1"
+rodio = "0.19.0"
