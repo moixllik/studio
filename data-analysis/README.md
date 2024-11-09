@@ -1,10 +1,12 @@
 # Data Analysis
 
+[GitHub](https://github.com/moixllik/studio/tree/main/data-analysis)
+
 ## Projects
 
 * [(ES) Diccionario Quechua](./quechua/)
-* [(PT) Sentimento dos Jornais sobre São Paulo](./jornais/)
 * [(ES) Diccionario Mochica](./muchik/)
+* [(PT) Sentimento dos Jornais sobre São Paulo](./jornais/)
 
 ## References
 

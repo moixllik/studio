@@ -2,6 +2,8 @@
 
 > Análisis de diccionarios del idioma Quechua, con fuentes en varios formatos, gráficos informativos y conclusiones.
 
+[GitHub](https://github.com/moixllik/studio/tree/main/data-analysis/quechua)
+
 ## Índice
 
 1. Definición del problema

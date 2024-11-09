@@ -2,13 +2,15 @@
 
 > By Irving M.
 
-* [Data Analysis](./data-analysis/)
-* [Databases](./databases/)
-* [Docker](./docker/)
-* [DotNet](./dotnet/)
+## Languages
+
+* [V](./v/)
 * [Go](./go/)
-* [Haskell](./haskell/)
-* [JavaScript](./javascript/)
 * [PHP](./php/)
 * [Rust](./rust/)
-* [V](./v/)
+* [Docker](./docker/)
+* [DotNet](./dotnet/)
+* [Haskell](./haskell/)
+* [Databases](./databases/)
+* [JavaScript](./javascript/)
+* [Data Analysis](./data-analysis/)

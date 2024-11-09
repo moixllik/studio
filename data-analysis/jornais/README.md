@@ -1,5 +1,7 @@
 # Sentimento dos Jornais sobre São Paulo
 
+[GitHub](https://github.com/moixllik/studio/tree/main/data-analysis/jornais)
+
 ```
 make deps
 
